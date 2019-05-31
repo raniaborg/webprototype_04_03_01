@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Prototype (Login)</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body id="white">
+    <header>
+        <nav role='navigation'>
+            <div id="kealgo"> <a href="index.html"><img src="images/forside/kea%20logo.svg" alt="logo"></a>
+            </div>
+            <div id="menuToggle">
+                <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                <input type="checkbox" />
+
+                <!--
+    Some spans to act as a hamburger.
+
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                <ul id="menu">
+                    <a href="forside.html">
+                        <li>Aktuelt</li>
+                    </a>
+                    <a href="forside.html">
+                        <li>Skema</li>
+                    </a>
+                    <a href="afleveringer.html">
+                        <li>Afleveringer</li>
+                    </a>
+                    <a href="forside.html">
+                        <li>Materialer</li>
+                    </a>
+                    <a href="forside.html">
+                        <li>Chat</li>
+                    </a>
+                    <a href="forside.html">
+                        <li>Indstillinger</li>
+                    </a>
+                    <div id="goback">
+                        <a href="index.html">
+                            <li>Log ud</li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="afleveringsside">
+        <div class="afleveringer">
+            <h1><b>Afleveringer</b></h1>
+        </div>
+        <div class="afleveringer2">
+            <h2><b>Næste aflevering</b></h2>
+        </div>
+        <div id="box1">
+            <h3 class="opgave_navn"><b>F19 - 04.01.01 - Opgavebeskrivelse - Design Sprint</b></h3>
+            <p class="opgave_tekst">Det er vigtigt at du fokuserer på...</p>
+            <div class="pin">
+                <img src="images/afleveringsikoner/upload.svg" alt="ikon">
+            </div>
+        </div>
+        <div class="afleveringer2">
+            <h2><b>Upload aflevering</b></h2>
+        </div>
+        <div id="box2">
+            <h3 class="opgave_navn"><b>Aflever</b></h3>
+            <p class="opgave_tekst">Tirsdag d. 21/5/19 inden kl. 22.00</p>
+            <div class="pin">
+                <img src="images/afleveringsikoner/upload.svg" alt="ikon">
+            </div>
+        </div>
+        <div class="afleveringer2">
+            <h2><b>Tidligere afleveringer</b></h2>
+        </div>
+        <div id="box3">
+            <button class="collapsible">
+                <h3 class="opgave_navn"><b>Tema 1</b></h3><br>
+                <p class="opgave_tekst1">Grundlæggende Web</p>
+                <div class="arrow">
+                    <img src="images/afleveringsikoner/arrow-down.svg" alt="ikon">
+                </div>
+            </button>
+            <div class="content">
+                <a>
+                    <h3 class="opgave_navn"><b>04.01.01 - Opgavebeskrivelse - Design Sprint</b></h3>
+                    <p class="fil">Dit filnavn</p>
+                    <div class="clip">
+                        <img src="images/afleveringsikoner/info.svg" alt="info">
+                    </div>
+                </a>
+                <a>
+                    <h3 class="opgave_navn"><b>04.01.01 - Opgavebeskrivelse - Design Sprint</b></h3>
+                    <p class="fil">Dit filnavn</p>
+                    <div class="clip1">
+                        <img src="images/afleveringsikoner/info.svg">
+                    </div>
+                </a>
+                <a>
+                    <h3 class="opgave_navn"><b>04.01.01 - Opgavebeskrivelse - Design Sprint</b></h3>
+                    <p class="fil">Dit filnavn</p>
+                    <div class="clip2">
+                        <img src="images/afleveringsikoner/info.svg" alt="info">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="box4">
+            <h3 class="opgave_navn"><b>Tema 2</b></h3>
+            <p class="opgave_tekst">Grundlæggende Animation</p>
+            <div class="arrow">
+                <img src="images/afleveringsikoner/arrow-down.svg" alt="ikon">
+            </div>
+        </div>
+        <div id="box5">
+            <h3 class="opgave_navn"><b>Tema 3</b></h3>
+            <p class="opgave_tekst">Grundlæggende Indhold</p>
+            <div class="arrow">
+                <img src="images/afleveringsikoner/arrow-down.svg" alt="ikon">
+            </div>
+        </div>
+        <div id="box6">
+            <h3 class="opgave_navn"><b>Tema 4</b></h3>
+            <p class="opgave_tekst">Grundlæggende UX</p>
+            <div class="arrow">
+                <img src="images/afleveringsikoner/arrow-down.svg" alt="ikon">
+            </div>
+        </div>
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
